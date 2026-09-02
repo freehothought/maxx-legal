@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAXX — Gizlilik Politikası</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #16161a; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #ececf1; background: #101014; } }
+  h1 { font-size: 1.9rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.2rem; margin-top: 2.25rem; }
+  .meta { color: #6b6b76; font-size: .9rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .5rem .6rem; border-bottom: 1px solid #d8d8de; vertical-align: top; }
+  @media (prefers-color-scheme: dark) { th, td { border-color: #2f2f38; } }
+  .callout { border-left: 3px solid #ff3b6b; padding: .35rem 0 .35rem 1rem; margin: 1.25rem 0; }
+</style>
+</head>
+<body>
+
+<h1>MAXX — Gizlilik Politikası</h1>
+<p class="meta">Son güncelleme: 22 Ağustos 2026 · Sürüm 1.0</p>
+
+<p>Bu metin MAXX'in neyi topladığını, neyi toplamadığını ve buna karşı ne
+yapabileceğini anlatır. Okunmak için yazıldı, atlanmak için değil.</p>
+
+<h2>1. Biz kimiz</h2>
+<p>MAXX, Türkiye merkezli <strong>Kaotik Games</strong> tarafından işletilir ("biz").
+Bu politikayla ilgili her konuda:
+<a href="mailto:sercanserin@gmail.com">sercanserin@gmail.com</a>.</p>
+
+<h2>2. Kısa hâli</h2>
+<div class="callout">
+  <p><strong>Adını, e-postanı veya telefon numaranı istemiyoruz.</strong>
+  MAXX'i alışıldık anlamda bir hesap açmadan kullanabilirsin.</p>
+  <p><strong>Fotoğrafların saklanmıyor.</strong> Analiz için gönderilir, sonuç döner ve
+  görsel atılır. Sadece kaç görsel gönderdiğin ve toplam boyutu kayda geçer.</p>
+</div>
+
+<h2>3. Ne topluyoruz</h2>
+
+<table>
+  <tr><th>Veri</th><th>Neden</th><th>Saklanıyor mu?</th></tr>
+  <tr>
+    <td>Uygulamanın ürettiği rastgele cihaz kimliği</td>
+    <td>Kredilerinin oturumlar arasında sana bağlı kalması için</td>
+    <td>Evet, tek yönlü özet (SHA-256) olarak</td>
+  </tr>
+  <tr>
+    <td>Platform (iOS/Android), uygulama sürümü, dil, ülke</td>
+    <td>Destek, çeviriler, bölgesel fiyatlandırma</td>
+    <td>Evet</td>
+  </tr>
+  <tr>
+    <td>Yüklediğin fotoğraf ve ekran görüntüleri</td>
+    <td>İstediğin analizi üretmek için</td>
+    <td><strong>Hayır — işlendikten sonra atılır</strong></td>
+  </tr>
+  <tr>
+    <td>Yazdığın metin (bio, sohbet bağlamı vb.)</td>
+    <td>Analizin isabetini artırmak için</td>
+    <td><strong>Hayır — yapay zekâya gider, veritabanımıza yazılmaz</strong></td>
+  </tr>
+  <tr>
+    <td>Aldığın yapay zekâ sonucu</td>
+    <td>Geçmiş sonuçlarını uygulamada tekrar açabilmen için</td>
+    <td>Evet, hesabını silene kadar</td>
+  </tr>
+  <tr>
+    <td>Kredi bakiyesi ve hareket geçmişi</td>
+    <td>Kredi sistemini dürüst işletmek için</td>
+    <td>Evet, hesabını silene kadar</td>
+  </tr>
+  <tr>
+    <td>Satın alma kayıtları (ürün, tutar, mağaza işlem kimliği)</td>
+    <td>Muhasebe, vergi, iadeler</td>
+    <td>Evet — hesap silindikten sonra da tutulur (bkz. §7)</td>
+  </tr>
+  <tr>
+    <td>Kullanım olayları (modül açıldı, işlem bitti, hatalar)</td>
+    <td>Nerede bozulduğunu ve neyin kullanıldığını görmek için</td>
+    <td>Evet, hesabını silene kadar</td>
+  </tr>
+</table>
+
+<p><strong>Toplamadıklarımız:</strong> adın, e-postan, telefonun, rehberin, kesin konumun,
+reklam kimliklerin veya cihazının donanım seri numaraları. Seni başka uygulama ve
+sitelerde takip etmiyoruz.</p>
+
+<h2>4. Fotoğraflar — ayrıntısıyla</h2>
+<p>İnsanların en çok merak ettiği kısım burası, o yüzden tam olarak ne olduğunu yazıyoruz.</p>
+<ol>
+  <li>Bir fotoğraf seçersin. Şifreli bağlantı üzerinden sunucumuza yüklenir.</li>
+  <li>Sunucu geçerli bir görsel olduğunu doğrular ve bir yapay zekâ sağlayıcısına iletir (§5).</li>
+  <li>Yapay zekâ metin bir sonuç döner. O sonuç hesabına kaydedilir.</li>
+  <li><strong>Görselin kendisi diske yazılmaz ve saklanmaz.</strong> Yalnızca işlem
+  sırasında bellekte bulunur.</li>
+</ol>
+<p>Bu nedenle eski fotoğraflarını sana gösteremeyiz ve onları geri getiremeyiz.
+Bu bilinçli bir tercihtir.</p>
+
+<h2>5. Verini başka kimler işliyor</h2>
+<p>MAXX'in çalışması için sınırlı sayıda hizmet sağlayıcı kullanıyoruz. Bizim talimatımızla
+hareket ederler ve bizimle yaptıkları sözleşmelerle bağlıdırlar.</p>
+
+<table>
+  <tr><th>Sağlayıcı</th><th>Ne alıyor</th><th>Amaç</th></tr>
+  <tr><td>Google (Gemini API)</td><td>O istek için gönderdiğin görsel ve metin</td><td>Yapay zekâ analizi</td></tr>
+  <tr><td>Groq</td><td>O istek için gönderdiğin metin</td><td>Yapay zekâ analizi (yedek sağlayıcı)</td></tr>
+  <tr><td>Anthropic (Claude)</td><td>O istek için gönderdiğin görsel ve metin</td><td>Ödeyen kullanıcılar için analiz</td></tr>
+  <tr><td>RevenueCat</td><td>Anonim kullanıcı kimliğin ve satın alma olayların</td><td>Satın alma ve abonelik doğrulama</td></tr>
+  <tr><td>Apple / Google</td><td>Ödeme bilgileri (kartını biz hiç görmeyiz)</td><td>Uygulama içi satın alma</td></tr>
+</table>
+
+<p>Bu sağlayıcılar Türkiye dışında, ABD dâhil ülkelerde bulunur; dolayısıyla gönderdiğin
+içerik işlenmek üzere yurt dışına aktarılır. Verini kimseye satmıyoruz ve reklam amacıyla
+paylaşmıyoruz.</p>
+
+<h2>6. Hukuki dayanak</h2>
+<p>KVKK ve GDPR kapsamında verini, <em>talep ettiğin hizmetin yerine getirilmesi için
+gerekli olduğu</em> (analizin çalıştırılması, kredilerinin takibi) ve hizmeti çalışır,
+güvenli ve suistimalden uzak tutmaktaki <em>meşru menfaatimiz</em> gereği işliyoruz.
+Satın alma kayıtları ise <em>yasal saklama yükümlülüğü</em> nedeniyle tutulur.</p>
+
+<h2>7. Ne kadar süre saklıyoruz</h2>
+<ul>
+  <li><strong>Yüklenen fotoğraflar ve yazdığın metin:</strong> hiç saklanmaz.</li>
+  <li><strong>Sonuçlar, krediler, kullanım olayları:</strong> hesabını silene kadar.</li>
+  <li><strong>Satın alma kayıtları:</strong> hesap silindikten sonra da, muhasebe ve vergi
+  mevzuatının gerektirdiği süre boyunca tutulur. Bu kayıtlar artık seni tanımlamaya yarayan
+  hiçbir şeye bağlı değildir — giriş bilgilerin yok edilmiştir.</li>
+</ul>
+
+<h2>8. Hesabını silmek</h2>
+<p>Uygulamada <strong>Ayarlar → Hesabımı sil</strong>. İşlem anında gerçekleşir ve geri
+alınamaz. Giriş kimliğini, sonuçlarını, kullanım geçmişini ve
+<strong>kalan tüm kredilerini siler; krediler yanar</strong>.</p>
+<div class="callout">
+  <p><strong>Hesabını silmek aboneliğini iptal etmez.</strong> Abonelikler bizim
+  tarafımızdan değil, Apple veya Google tarafından tahsil edilir. App Store veya
+  Google Play hesap ayarlarından iptal etmezsen tahsilat devam eder.</p>
+</div>
+
+<h2>9. Haklarınız</h2>
+<p>Verine erişme, düzeltilmesini veya silinmesini isteme ve işlenmesine itiraz etme hakkın
+var. Silme için en hızlı yol yukarıdaki uygulama içi düğmedir. Diğer talepler için
+<a href="mailto:sercanserin@gmail.com">sercanserin@gmail.com</a> adresine yaz; 30 gün içinde
+yanıtlarız. Adını veya e-postanı tutmadığımız için, kimliğinin doğrulanabildiği
+uygulama içi taleplere yanıt verebiliyor olabiliriz.</p>
+<p>Türkiye'de Kişisel Verileri Koruma Kurumu'na, AB'de kendi ülkendeki veri koruma
+otoritesine şikâyette bulunma hakkın saklıdır.</p>
+
+<h2>10. Çocuklar</h2>
+<p>MAXX yalnızca yetişkinler içindir. Kullanmak için 18 yaşından büyük olmalısın ve
+uygulama her şeyden önce bunu onaylamanı ister. Bilerek 18 yaş altından veri toplamayız.
+Bir çocuğun MAXX kullandığını düşünüyorsan bize yaz, hesabı sileriz.</p>
+
+<h2>11. Güvenlik</h2>
+<p>Uygulama ile sunucularımız arasındaki trafik şifrelidir. Oturum belirtecin cihazının
+güvenli deposunda tutulur (iOS'ta Keychain, Android'de EncryptedSharedPreferences), düz
+metin olarak değil. Cihaz kimliğin bizde yalnızca tek yönlü özet olarak durur. Hiçbir
+sistem kusursuz değildir, ama kaybı en çok zarar verecek veriyi — fotoğraflarını —
+zaten tutmuyoruz.</p>
+
+<h2>12. Değişiklikler</h2>
+<p>Bu politikada önemli bir değişiklik yaparsak yukarıdaki sürüm numarasını yükseltir ve
+değişiklik yürürlüğe girmeden önce uygulamada seni bilgilendiririz.</p>
+
+<h2>13. İletişim</h2>
+<p>Kaotik Games · <a href="mailto:sercanserin@gmail.com">sercanserin@gmail.com</a></p>
+
+</body>
+</html>
