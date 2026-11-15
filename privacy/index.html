@@ -25,7 +25,7 @@
 <body>
 
 <h1>MAXX — Privacy Policy</h1>
-<p class="meta">Last updated: 28 October 2026 · Version 1.1</p>
+<p class="meta">Last updated: 14 November 2026 · Version 1.2</p>
 
 <p>This policy explains what MAXX collects, what it does not, and what you can do about it.
 It is written to be read, not to be skimmed past.</p>
@@ -42,6 +42,11 @@ It is written to be read, not to be skimmed past.</p>
   <p><strong>Your photos are not stored.</strong> They are sent for analysis, the result is
   returned, and the image is discarded. We keep only how many images you sent and their
   total size.</p>
+  <p><strong>Your practice chats are kept for 30 days, then deleted.</strong> The messages you
+  write in the practice simulator, the character's replies and the coach's notes are stored
+  on our server so you can rewind, try a different line and reopen a conversation. They are
+  deleted automatically 30 days after you last used that conversation, and immediately if
+  you delete your account.</p>
 </div>
 
 <h2>3. What we collect</h2>
@@ -64,14 +69,32 @@ It is written to be read, not to be skimmed past.</p>
     <td><strong>No — discarded after processing</strong></td>
   </tr>
   <tr>
-    <td>Text you type (e.g. your bio, chat context)</td>
+    <td>Text you type into the tools (e.g. your bio, a draft message, context notes)</td>
     <td>To improve the accuracy of the analysis</td>
     <td><strong>No — sent to the AI, never written to our database</strong></td>
   </tr>
   <tr>
-    <td>The AI result you received</td>
-    <td>So you can reopen past results in the app</td>
+    <td>Practice simulator conversations: the messages you write, the character's replies
+    and the coach's notes on each message</td>
+    <td>So you can go back to any message, try a different line (branches) and reopen the
+    conversation later</td>
+    <td><strong>Yes — for 30 days after your last activity in that conversation</strong>,
+    then deleted automatically; deleted immediately when you delete your account</td>
+  </tr>
+  <tr>
+    <td>Practice progress: points, level, daily streak, mission stars, unlocked characters,
+    your setup answers (your goal, your experience, what you find hardest, whether you
+    practise with a woman or a man character) and up to 3 short notes each character
+    "remembers" about you from your chats (e.g. "plays guitar")</td>
+    <td>To track your progress and keep characters consistent between rounds</td>
     <td>Yes, until you delete your account</td>
+  </tr>
+  <tr>
+    <td>The AI result you received (including practice round reports)</td>
+    <td>So you can reopen past results in the app</td>
+    <td>Yes, until you delete your account. In a round report, the direct quote of your own
+    message ("your best line") is removed after 30 days; the scores and the written
+    feedback stay</td>
   </tr>
   <tr>
     <td>Credit balance and transaction history</td>
@@ -94,6 +117,11 @@ It is written to be read, not to be skimmed past.</p>
 precise location, advertising identifiers, or your device's hardware serial numbers.
 We do not track you across other apps or websites.</p>
 
+<p><strong>The practice simulator is the one place where we store what you type.</strong>
+The characters are fictional and are played by AI — you are never talking to a real person.
+Because those conversations are stored for 30 days, do not put anything in a practice chat
+that you would not want kept for that long, such as real names, phone numbers or addresses.</p>
+
 <h2>4. Photos — in detail</h2>
 <p>This is the part people care about most, so here is exactly what happens.</p>
 <ol>
@@ -114,7 +142,9 @@ instructions and are bound by their own agreements with us.</p>
   <tr><th>Provider</th><th>What they receive</th><th>Purpose</th></tr>
   <tr>
     <td>Third-party AI service providers</td>
-    <td>The image and text you submitted for that request</td>
+    <td>The image and text you submitted for that request. In the practice simulator this
+    includes the conversation so far and the character's short memory notes, so the
+    character can reply in context</td>
     <td>Generating your analysis results</td>
   </tr>
   <tr>
@@ -142,8 +172,15 @@ to keep them.</p>
 
 <h2>7. How long we keep things</h2>
 <ul>
-  <li><strong>Uploaded photos and typed text:</strong> not kept at all.</li>
-  <li><strong>Results, credits, usage events:</strong> until you delete your account.</li>
+  <li><strong>Uploaded photos, and text typed into the tools:</strong> not kept at all.</li>
+  <li><strong>Practice simulator conversations</strong> (your messages, the character's
+  replies, coach notes): 30 days after your last activity in that conversation, then
+  deleted automatically. The clean-up runs several times a day, so deletion can lag by a
+  few hours. A conversation you opened but never wrote in is removed within about a day.</li>
+  <li><strong>Practice progress and character memory notes:</strong> until you delete your
+  account.</li>
+  <li><strong>Results, credits, usage events:</strong> until you delete your account. In
+  practice round reports, the quote of your own message is removed after 30 days.</li>
   <li><strong>Purchase records:</strong> retained after account deletion, for as long as
   accounting and tax law requires. These records are no longer linked to any way of
   identifying you — the login credentials are destroyed.</li>
@@ -151,7 +188,8 @@ to keep them.</p>
 
 <h2>8. Deleting your account</h2>
 <p>Open <strong>Settings → Delete my account</strong> in the app. This is immediate and
-cannot be undone. It removes your login identity, your results, your usage history and
+cannot be undone. It removes your login identity, your results, your practice conversations and
+progress, your usage history and
 <strong>any remaining credits, which are forfeited</strong>.</p>
 <div class="callout">
   <p><strong>Deleting your account does not cancel a subscription.</strong> Subscriptions are
@@ -178,7 +216,7 @@ If you believe a minor has used MAXX, contact us and we will delete the account.
 your device's secure storage (Keychain on iOS, EncryptedSharedPreferences on Android),
 not in plain text. Your device identifier is stored on our side only as a one-way hash.
 No system is perfectly secure, but we do not keep the data that would be most damaging
-to lose — your photos.</p>
+to lose — your photos — and practice conversations are deleted after 30 days.</p>
 
 <h2>12. Changes</h2>
 <p>If we change this policy in a way that matters, we will update the version number above
