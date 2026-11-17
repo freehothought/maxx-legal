@@ -25,7 +25,7 @@
 <body>
 
 <h1>MAXX — Privacy Policy</h1>
-<p class="meta">Last updated: 14 November 2026 · Version 1.2</p>
+<p class="meta">Last updated: <time datetime="2026-11-15">15 November 2026</time> · Version 1.3</p>
 
 <p>This policy explains what MAXX collects, what it does not, and what you can do about it.
 It is written to be read, not to be skimmed past.</p>
@@ -71,7 +71,8 @@ It is written to be read, not to be skimmed past.</p>
   <tr>
     <td>Text you type into the tools (e.g. your bio, a draft message, context notes)</td>
     <td>To improve the accuracy of the analysis</td>
-    <td><strong>No — sent to the AI, never written to our database</strong></td>
+    <td><strong>The input itself is not saved to our database.</strong> Generated results
+    may quote it; see §4.2 for chat twin results</td>
   </tr>
   <tr>
     <td>Practice simulator conversations: the messages you write, the character's replies
@@ -80,6 +81,13 @@ It is written to be read, not to be skimmed past.</p>
     conversation later</td>
     <td><strong>Yes — for 30 days after your last activity in that conversation</strong>,
     then deleted automatically; deleted immediately when you delete your account</td>
+  </tr>
+  <tr>
+    <td>Voice date transcripts and speaking and silence durations</td>
+    <td>To generate the character's replies, coaching and speaking feedback</td>
+    <td>Transcripts and per-turn timings: 30 days after your last activity in that
+    conversation, or until you delete your account. Aggregate speaking scores in round
+    reports remain until you delete your account. No recording of your voice is collected</td>
   </tr>
   <tr>
     <td>Practice progress: points, level, daily streak, mission stars, unlocked characters,
@@ -92,7 +100,8 @@ It is written to be read, not to be skimmed past.</p>
   <tr>
     <td>The AI result you received (including practice round reports)</td>
     <td>So you can reopen past results in the app</td>
-    <td>Yes, until you delete your account. In a round report, the direct quote of your own
+    <td>Yes, until you delete your account, except chat twin profiles and generated twin/linked
+    test results (see §4.2). In a round report, the direct quote of your own
     message ("your best line") is removed after 30 days; the scores and the written
     feedback stay</td>
   </tr>
@@ -113,14 +122,20 @@ It is written to be read, not to be skimmed past.</p>
   </tr>
 </table>
 
+<p><strong>Chat twin data:</strong> the observed texting-style profile and generated twin
+replies, feedback and linked message test results are stored so you can reopen them.
+Access expires within 30 days of each record's creation; see §4.2 for processing and deletion.</p>
+
 <p><strong>We do not collect:</strong> your name, email, phone number, contacts,
 precise location, advertising identifiers, or your device's hardware serial numbers.
+Names or numbers included in content you submit may nevertheless be processed (§4.2).
 We do not track you across other apps or websites.</p>
 
-<p><strong>The practice simulator is the one place where we store what you type.</strong>
+<p><strong>We store the messages you type in the practice simulator.</strong>
 The characters are fictional and are played by AI — you are never talking to a real person.
 Because those conversations are stored for 30 days, do not put anything in a practice chat
-that you would not want kept for that long, such as real names, phone numbers or addresses.</p>
+that you would not want kept for that long, such as real names, phone numbers or addresses.
+Chat screenshot transcripts and generated tool results may also contain message text (§4.2).</p>
 
 <h2>4. Photos — in detail</h2>
 <p>This is the part people care about most, so here is exactly what happens.</p>
@@ -134,6 +149,58 @@ that you would not want kept for that long, such as real names, phone numbers or
 <p>Because of this, we cannot show you your old photos, and we cannot recover them.
 That is intentional.</p>
 
+<h2>4.1 Microphone and speech recognition — voice dates</h2>
+<p>Voice dates use your microphone and speech recognition only with your permission.
+Your speech is converted to text <strong>on your device or by your phone's built-in
+speech recognition service (operating system provider)</strong>. On-device recognition
+is preferred; if it is unavailable or the language is unsupported, your phone's service
+may process your audio over the network under the operating system provider's privacy policy.
+MAXX never receives or stores your audio. For each voice turn, only the transcript
+and speaking and silence durations are sent to our server over an encrypted connection.
+The transcript is processed by third-party AI services, like written practice messages,
+to generate replies and feedback.</p>
+<p>The character's <strong>reply text</strong> is sent to a third-party speech generation
+service. The generated character audio is held briefly in server memory for playback;
+it is not saved to disk or our database. This is synthetic character speech, not a
+recording of your voice. If server speech is unavailable, the device can read the reply.</p>
+<p>You can withdraw microphone access at any time in your device settings. On iOS,
+open <strong>Settings → Privacy &amp; Security → Microphone → MAXX</strong> and turn it off;
+do the same under <strong>Speech Recognition</strong>. On Android, open
+<strong>Settings → Apps → MAXX → Permissions → Microphone → Don't allow</strong>.
+Menu labels vary by device. You can continue by typing if permissions are denied,
+withdrawn or speech recognition is unavailable. Revoking a permission stops
+future microphone use; delete your account to remove existing transcripts immediately.</p>
+
+<h2>4.2 Chat twin — a profile from your chat screenshot</h2>
+<p>When you choose to build a chat twin, we use the transcript extracted from the chat
+screenshot you uploaded to create a profile of the other person's observed texting style:
+message length, emoji use, tone and an estimated interest level. The profile contains no
+names or direct quotes. It is a fictional rehearsal aid, not a statement of the person's
+thoughts or a prediction of their reply. For rehearsals and linked message tests, the
+original transcript, profile, your draft and prior rehearsal context are sent to
+third-party AI services again to generate replies, feedback and test results.</p>
+<p>The screenshot itself is discarded after analysis. Its transcript remains in the
+original analysis result until account deletion; we do not store a second copy for the
+twin, and a source analysis older than the twin retention limit cannot be reused.
+Drafts and up to the last six rehearsal turns (12 messages) are held temporarily while
+the screen is open, not saved persistently on your device, and sent for processing when
+you rehearse or test. We do not save these inputs separately in our database, but generated
+replies, feedback and test results may quote messages.</p>
+<p>Access to the style profile and generated twin and linked test content, including any
+quotes, expires no later than 30 days after <strong>each record was created</strong>
+(earlier if a shorter retention period is configured). Further use does not extend this
+period. Expired content cannot be reopened or reused. It is cleared from our database by
+the periodic clean-up, which runs every six hours by default, so removal can lag by a few
+hours. Credit and cost records remain without this content. Deleting your account removes
+the profile, transcript and generated content immediately.</p>
+<p>You are responsible for ensuring you are entitled to upload and process the other
+person's personal data, including obtaining any necessary permission. Before uploading,
+we recommend obscuring names, phone numbers and other identifying details in screenshots
+and avoiding unnecessary personal information.</p>
+<p><strong>Our server never sends messages to anyone on your behalf.</strong> If you choose
+to share a tested draft, sharing starts from your device's system share sheet; you choose
+the app and recipient and confirm sending there.</p>
+
 <h2>5. Who else processes your data</h2>
 <p>To make MAXX work we use a small number of service providers. They act on our
 instructions and are bound by their own agreements with us.</p>
@@ -144,16 +211,22 @@ instructions and are bound by their own agreements with us.</p>
     <td>Third-party AI service providers</td>
     <td>The image and text you submitted for that request. In the practice simulator this
     includes the conversation so far and the character's short memory notes, so the
-    character can reply in context</td>
+    character can reply in context. Chat twins also use the original transcript, style
+    profile, draft and prior rehearsal context described in §4.2</td>
     <td>Generating your analysis results</td>
   </tr>
   <tr>
-    <td>RevenueCat</td>
+    <td>Third-party speech generation service</td>
+    <td>The character's reply text, language and voice settings; no recording of your voice</td>
+    <td>Generating the character's spoken reply</td>
+  </tr>
+  <tr>
+    <td>Purchase validation service</td>
     <td>Your anonymous user ID and purchase events</td>
     <td>Validating purchases and subscriptions</td>
   </tr>
   <tr>
-    <td>Apple / Google</td>
+    <td>Your platform's app store</td>
     <td>Payment details (we never see your card)</td>
     <td>Processing in-app purchases</td>
   </tr>
@@ -172,14 +245,25 @@ to keep them.</p>
 
 <h2>7. How long we keep things</h2>
 <ul>
-  <li><strong>Uploaded photos, and text typed into the tools:</strong> not kept at all.</li>
+  <li><strong>Uploaded photos:</strong> not kept. Text typed into tools is not saved as a
+  separate input; generated results may quote it (§4.2).</li>
   <li><strong>Practice simulator conversations</strong> (your messages, the character's
   replies, coach notes): 30 days after your last activity in that conversation, then
   deleted automatically. The clean-up runs several times a day, so deletion can lag by a
   few hours. A conversation you opened but never wrote in is removed within about a day.</li>
+  <li><strong>Voice date transcripts and per-turn speaking/silence timings:</strong>
+  the same 30-day period after your last activity in that conversation, with the same
+  clean-up schedule. Account deletion removes them immediately. Aggregate speaking
+  metrics in round reports remain until account deletion; direct transcript quotes in
+  reports are removed after 30 days. Recordings of your voice are not collected.
+  Generated character audio is only cached briefly in memory for playback.</li>
+  <li><strong>Chat twin profiles and generated twin/linked test content:</strong> access
+  expires within 30 days of each record's creation; content is then cleared by periodic
+  clean-up (§4.2). Account deletion removes it immediately. The original screenshot
+  transcript remains in the source analysis result until account deletion.</li>
   <li><strong>Practice progress and character memory notes:</strong> until you delete your
   account.</li>
-  <li><strong>Results, credits, usage events:</strong> until you delete your account. In
+  <li><strong>Other results, credits, usage events:</strong> until you delete your account. In
   practice round reports, the quote of your own message is removed after 30 days.</li>
   <li><strong>Purchase records:</strong> retained after account deletion, for as long as
   accounting and tax law requires. These records are no longer linked to any way of
@@ -188,13 +272,14 @@ to keep them.</p>
 
 <h2>8. Deleting your account</h2>
 <p>Open <strong>Settings → Delete my account</strong> in the app. This is immediate and
-cannot be undone. It removes your login identity, your results, your practice conversations and
+cannot be undone. It removes your login identity, your results (including chat twin profiles,
+source transcripts and generated twin/linked test content), your practice conversations and
 progress, your usage history and
 <strong>any remaining credits, which are forfeited</strong>.</p>
 <div class="callout">
   <p><strong>Deleting your account does not cancel a subscription.</strong> Subscriptions are
-  billed by Apple or Google, not by us. Cancel yours in your App Store or Google Play
-  account settings, otherwise billing continues.</p>
+  billed by your platform's app store. Cancel yours in that store's subscription
+  settings, otherwise billing continues.</p>
 </div>
 
 <h2>9. Your rights</h2>
